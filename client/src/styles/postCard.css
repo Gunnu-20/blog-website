@@ -1,0 +1,88 @@
+.post-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.6rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s, transform 0.15s;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.post-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+  text-decoration: none;
+}
+
+.post-card-title:hover {
+  color: var(--primary);
+}
+
+.post-card-meta {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.post-card-excerpt {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.tag {
+  background: #eff6ff;
+  color: var(--primary);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.post-card-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+.btn-edit {
+  background: #eff6ff;
+  color: var(--primary);
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-edit:hover {
+  background: #dbeafe;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  color: var(--danger);
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-delete:hover {
+  background: #fecaca;
+}

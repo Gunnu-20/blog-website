@@ -1,0 +1,84 @@
+.navbar {
+  background: #ffffff;
+  border-bottom: 1.5px solid var(--border);
+  padding: 0 2rem;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  color: var(--text-main);
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 7px;
+  transition: background 0.15s;
+}
+
+.navbar-links a:hover {
+  background: var(--bg-soft);
+  text-decoration: none;
+}
+
+.btn-nav-primary {
+  background: var(--primary);
+  color: #fff !important;
+  padding: 0.45rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-nav-primary:hover {
+  background: var(--primary-hover) !important;
+}
+
+.btn-nav-logout {
+  background: none;
+  border: 1.5px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.btn-nav-logout:hover {
+  background: var(--bg-soft);
+  color: var(--danger);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .navbar-links {
+    gap: 0.5rem;
+  }
+
+  .navbar-links a {
+    font-size: 0.82rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
